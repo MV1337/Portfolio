@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indyara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <p>INDYARA STEPHANIE</p>
+        </div>
+        <nav>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#tecnicas">Técnicas</a></li>
+            <li><a href="#">Serviços</a></li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box-1">
+            <img src="img/testando2.png" alt="" class="keyframes">
+            <p>Sou fisioterapeuta e atuo na prevenção e tratamento de disfunções físicas e emociais, através de Recursos
+                Terapêuticos como a cinesioterapia,  terapias manuais e PICS( Práticas itegrativas e complementares em
+                saúde)</p>
+
+            <div class="linha"></div>
+
+            <p class="text-2">Já pensou em cuidar da sua saúde e do seu bem estar sem sair de casa?</p>
+            <p class="text-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat tenetur repellendus voluptate
+                perferendis natus officia, eaque quos, voluptatum nesciunt, sequi quisquam libero! Vero facere dolorum
+                velit ea neque soluta omnis quisquam voluptatem! Nostrum harum cumque animi accusantium velit asperiores
+                enim, excepturi esse obcaecati sint repudiandae. Laudantium numquam beatae voluptate est!</p>
+        </div>
+
+
+        <div class="about-tec">
+            <p id="tecnicas">UM POUCO SOBRE CADA TÉCNICA QUE UTILIZO</p>
+        </div>
+
+        <div class="box-tabs" id="tecnicas">
+            <div style="background-color: #70ad8d; font-weight: bold" class="single-tab">Massagem</div>
+            <div class="single-tab">Drenagem</div>
+            <div class="single-tab">Ventosaterapia</div>
+            <div class="single-tab">Auriculoterapia</div>
+
+
+            <div id="box-text">
+                É a manipulação de tecidos moles do corpo que tem como objetivo proporcionar bem estar e alívio de dores
+                muscular de forma Terapêutica tratando não só o físico mas também o emocional.
+            </div>
+        </div>
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="contato">
+        <h2 id="contato">CONTATO</h2>
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+            <input type="text" name="extra_Email:" placeholder="Seu E-mail:" required />
+            <input type="text" name="subject" placeholder="Assunto" required/>
+            <textarea name="text" placeholder="Mensagem:" required></textarea>
+
+            <input type="hidden" name="access_token" value="tbvxu3nca0lwmuilgoao36a8" />
+            <!-- return urls can be fully qualified -OR-
+ start with / for root relative -OR-
+ start with . for url relative -->
+            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+
+            <!-- set the reply-to address -->
+            <!-- <input type="text" name="reply_to"
+        placeholder="Your Email" /> -->
+
+            <!-- to append extra fields, use the extra_ prefix.
+Entries will be appended to your message body. -->
+            <!-- <input type="text" name="extra_phone_number"
+        placeholder="Phone Number" /> -->
+
+            <!-- to split your message into 160 chars
+ for an sms gateway -->
+            <!-- <input type="hidden"
+        name="sms_format" value="true" /> -->
+                <input id="submit_form" type="submit" value="Enviar" class="btn"/>
+            
+            <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+        </form>
+
+        <!-- optional, prevents the submit button from being pressed more than once -->
+        <script>
+            var submitButton = document.getElementById("submit_form");
+            var form = document.getElementById("email_form");
+            form.addEventListener("submit", function (e) {
+                setTimeout(function () {
+                    submitButton.value = "Enviando...";
+                    submitButton.disabled = true;
+                }, 1);
+            });
+        </script>
+    </div>
+
+
+    <footer>
+        <div class="box-footer">
+
+            <div>
+                <h3>REDES-SOCIAIS</h3>
+                <a href="https://www.facebook.com/indyara.stephanie.1" target="_blank" rel="noopener noreferrer"><img
+                        src="img/icone-facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/indyarassl/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/icone-instagram.png" alt=""></a>
+            </div>
+
+
+            <div>
+                <h3>HORÁRIOS</h3>
+                <p>Seg-Sex: 00h00 - 00h00 <br>
+                    Sab: 00h00 - 00h00
+                </p>
+            </div>
+
+            <div>
+                <h4>ATENDIMENTO</h4>
+                <P>Atendimento domiciliar na região Zona leste de SP</P>
+            </div>
+
+        </div>
+        <div class="linha2"></div>
+        <p id="direitos"> <span id="date"></span> Desenvolvido por &copy;MatheusVinicius</p>
+
+
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
